@@ -19,7 +19,7 @@ export const NavBar = () => {
           <Link to="NGO_Website/team">Our Team</Link>{" "}
         </li>
         <li>
-          <Link to="NGO_Website/donate">Join Us</Link>{" "}
+          <Link to="NGO_Website/joinus/signin">Join Us</Link>{" "}
         </li>
         <button className="donate_btn">
           <Link to="NGO_Website/donate">Donate Us</Link>

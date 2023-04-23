@@ -1,0 +1,9 @@
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100vh;
+    height: 50vh;
+    border: 2px solid black;
+    margin: auto;
+}
