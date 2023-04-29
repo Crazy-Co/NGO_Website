@@ -4,10 +4,13 @@ import { Banner } from "../components/Banner";
 import { AboutUs } from "../components/AboutUs";
 import { Contributors } from "../components/Contributors";
 import { Team } from "../components/Team";
+import { NavBar } from "../components/Navbar";
 
-const HomePage = () => {
+
+const HomePageLoggedOut = () => {
   return (
     <div>
+      <NavBar />
       <ScrollNav />
       <Banner />
       <AboutUs />
@@ -34,4 +37,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePageLoggedOut;

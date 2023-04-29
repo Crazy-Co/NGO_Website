@@ -1,13 +1,13 @@
 import React from "react";
 import { Contributors } from "../components/Contributors";
 import { NavBar } from "../components/Navbar";
-// import { NavBarLoggedIn } from "../components/NavbarLoggedIn";
+import { NavBarLoggedIn } from "../components/auth/NavbarLoggedIn";
 
 
 const Testimonial = (props) => {
   return (
     <div>
-      <NavBar />
+      <NavBarLoggedIn />
 
       <Contributors />
     </div>

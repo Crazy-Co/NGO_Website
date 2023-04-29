@@ -1,48 +1,62 @@
 import { createUserWithEmailAndPassword } from "firebase/auth"
-import React, {useState} from "react"
-import {auth} from '../../firebase'
+import React, { useState } from "react"
+import { auth } from '../../firebase'
 import { Link } from 'react-router-dom'
 import styles from './login.css'
 
 
 
-export default function Register (props) {
+export default function Register(props) {
     const [isEmail, setEmail] = useState('')
     const [isPassword, setPassword] = useState('')
+    const [isConfirmedPassword, setConfirmedPassword] = useState('')
 
     function handleSubmit(e) {
         e.preventDefault();
-        createUserWithEmailAndPassword(auth, isEmail, isPassword)
-        .then((userCredential) => {
-            console.log(userCredential);
-        })
-        .catch((error) => {
-            alert(error);
-        });
+        if (isPassword == isConfirmedPassword) {
+            createUserWithEmailAndPassword(auth, isEmail, isPassword)
+                .then((userCredential) => {
+                    console.log(userCredential);
+                })
+                .catch((error) => {
+                    alert(error);
+                });
+        }
+        else {
+            alert('Password does not match')
+        }
     }
 
     return (
         <div className="login-box">
             <h3>Registration</h3>
             <form onSubmit={handleSubmit}>
-                <label for = "email">Email ID</label>
+                <label for="email">Email ID</label>
                 <input
-                    type= 'email'
+                    type='email'
                     name="email"
                     value={isEmail}
-                    onChange ={(e) => setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
 
-                <label for = "password">Password</label>
+                <label for="password">Password</label>
                 <input
-                    type= 'password'
+                    type='password'
                     name="password"
                     value={isPassword}
-                    onChange ={(e) => setPassword(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                 />
 
-                <input 
-                    type= 'submit'
+                <label for="con-password">Confirm Password</label>
+                <input
+                    type='password'
+                    name="con-password"
+                    value={isConfirmedPassword}
+                    onChange={(e) => setConfirmedPassword(e.target.value)}
+                />
+
+                <input
+                    type='submit'
                 />
 
                 {/* <button
