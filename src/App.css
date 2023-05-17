@@ -7,7 +7,7 @@
 }
 :root {
   /* --primary: rgb(0, 173, 66); */
-  --primary: rgb(0, 75, 98);
+  --primary: rgb(3, 171, 43);
   --white: #ffffff;
   --black: #000;
 }
@@ -46,7 +46,7 @@ section {
   padding: 0px 10px;
   height: fit-content;
   color: var(--primary);
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-shadow: 0px 0px 2px var(--black);
   text-transform: uppercase;
@@ -643,7 +643,7 @@ section {
   transform: rotateZ(-90deg);
 }
 .donate .image {
-  background-color: #005a32;
+  background-color: #ffffff;
   height: 700px;
   width: 950px;
   background-image: url("../src/images/diego-ph-SZYreZsJ-fE-unsplash.jpg");
@@ -761,6 +761,50 @@ section {
   color: #5f5f5f;
   filter: drop-shadow(0px 0px 50px);
 }
+.footer .text{
+  margin: 20px 0px;
+  color: #6f6f6f;
+}
+.footer .email_subscribe_form{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  position: absolute;
+  bottom: 18%;  
+  /* border-radius: 10px; */
+  /* overflow: hidden; */
+}
+.footer .email_subscribe_form input{
+  border: 0;
+  outline: none;
+  padding: 19px 10px;
+  height: 30px;
+  width: 250px;
+  font-size: 16px;
+  /* background-color: rgb(171, 230, 247); */
+}
+.footer .email_subscribe_form button{
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.footer span.msg{
+  color: var(--white);
+  position:absolute;
+  bottom: 0px;
+  font-size: 12px;
+}
+.footer .email_subscribe_form button img{
+  filter: invert(100%);
+}
 .footer .wrapper_h {
   display: flex;
   align-items: center;
@@ -779,6 +823,7 @@ section {
   height: 100%;
   margin: auto 20px;
   margin-top: 40px;
+  position: relative;
 }
 
 .footer .wrapper_h .wrapper_v h2 {
