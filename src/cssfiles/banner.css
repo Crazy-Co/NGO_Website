@@ -1,0 +1,98 @@
+.banner {
+    height: 91vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.678)),
+        url("../images/img1.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.banner .banner_text {
+    width: 90vw;
+    color: var(--white);
+    font-size: 30px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.banner .banner_text h2 {
+    font-size: 60px;
+    text-shadow: 2px 2px 15px rgb(100, 100, 100);
+}
+
+.banner .banner_text p {
+    margin: 20px auto;
+    width: 50vw;
+    font-size: 20px;
+    text-shadow: 0px 0px 3px var(--black);
+    /* border: 2px solid red; */
+}
+
+.banner .banner_text button {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px var(--black);
+    text-transform: uppercase;
+    background-color: #ffffff51;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .banner .banner_text h2 {
+        font-size: 55px;
+    }
+
+    .banner .banner_text p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .banner {
+        background-position: top;
+    }
+}
+
+
+@media only screen and (max-width: 730px) {
+
+    .banner {
+        background-position: top;
+    }
+
+    .banner .banner_text h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .banner .banner_text p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .banner .banner_text h2 {
+        font-size: 30px;
+    }
+
+    .banner .banner_text p {
+        font-size: 12px;
+    }
+
+    .banner .banner_text button {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .banner .banner_text h2 {
+        font-size: 28px;
+    }
+}

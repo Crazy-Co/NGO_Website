@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { auth } from '../../firebase';
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import AuthDetails from "./AuthDetails";
+import styles from '../../cssfiles/navbar.css'
 
 
 
@@ -33,7 +34,7 @@ export const NavBarLoggedIn = () => {
 
   return (
     <div className="navbar">
-      <ul>
+      <ul className="navMenu">
         <div className="logo">LOGO</div>
         <li>
           <Link to="../../NGO_Website/signedin">Home</Link>{" "}

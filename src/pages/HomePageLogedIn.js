@@ -7,6 +7,7 @@ import { Team } from "../components/Team";
 import MyChart from '../components/MyChart'
 import { NavBarLoggedIn } from "../components/auth/NavbarLoggedIn";
 import ReachOutForm from "../components/ReachOutForm";
+// import styles from '../cssfiles/map.css'
 
 const HomePageLoggedIn = (props) => {
     return (

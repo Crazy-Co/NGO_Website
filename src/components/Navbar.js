@@ -1,10 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from '../cssfiles/navbar.css'
+
 
 export const NavBar = () => {
+  const [isActive, setIsActive] = React.useState(false)
+  // const hamburger = document.querySelector('.hamburger')
+  // const navMenu = document.querySelector('.navMenu')
+
+  function toggleHamburger () {
+    setIsActive(!isActive)
+  }
   return (
     <div className="navbar">
-      <ul>
+      <ul className={isActive ? "navMenu active" : "navMenu"}>
         <div className="logo">LOGO</div>
         <li>
           <Link to="../../NGO_Website/">Home</Link>{" "}
@@ -25,6 +34,12 @@ export const NavBar = () => {
           <Link to="../../NGO_Website/donate">Donate Us</Link>
         </button>
       </ul>
+      <div className={isActive ? "hamburger active" : "hamburger"} onClick={toggleHamburger}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+
+      </div>
     </div>
   );
 };

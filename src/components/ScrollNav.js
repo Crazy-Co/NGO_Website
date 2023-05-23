@@ -1,3 +1,5 @@
+import styles from '../cssfiles/scrollnav.css'
+
 export const ScrollNav = () => {
     return (
         <div className="scroll_nav">
