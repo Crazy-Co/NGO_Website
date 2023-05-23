@@ -1,13 +1,13 @@
 import React from "react";
 import { AboutUs } from "../components/AboutUs";
 import { NavBar } from "../components/Navbar";
-// import {NavBarLoggedIn} from '../components/NavbarLoggedIn'
+import {NavBarLoggedIn} from '../components/auth/NavbarLoggedIn'
 
 
 const AboutPage = (props) => {
   return (
     <div>
-      <NavBar />
+      <NavBarLoggedIn />
       <AboutUs />
     </div>
   );

@@ -1,0 +1,62 @@
+.footer {
+  height: 50vh;
+  width: 100%;
+  background-color: #222222;
+  color: #5f5f5f;
+  filter: drop-shadow(0px 0px 50px);
+}
+
+.footer .wrapper_h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 40vh;
+  margin: auto 100px;
+}
+
+.footer .wrapper_h .wrapper_v {
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  flex-direction: column;
+  width: 30%;
+  /* border: 2px solid red; */
+  height: 100%;
+  margin: auto 20px;
+  margin-top: 40px;
+}
+
+.footer .wrapper_h .wrapper_v h2 {
+  text-transform: uppercase;
+  border-bottom: 3px solid #5f5f5f;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.footer .wrapper_h .wrapper_v ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.footer .wrapper_h .wrapper_v ul li {
+  margin: 5px;
+  color: #6f6f6f;
+}
+
+.footer .wrapper_h .wrapper_v ul li span {
+  margin: 5px;
+  color: #a7a7a7;
+}
+
+.footer .wrapper_h .wrapper_v ul li a {
+  color: #6f6f6f;
+  text-decoration: none;
+}
+
+.footer .wrapper_h .wrapper_v ul li a:hover {
+  color: #9f9f9f;
+}

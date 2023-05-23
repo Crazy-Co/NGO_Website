@@ -3,7 +3,7 @@ import React from "react";
 export const Card = (props) => {
     return(
         <div className={`card contributors_text ${props.className}`} >
-        <div className="wrapper_h">
+        <div className="wrapper_h contributor_wrapper_h">
           <div className="person wrapper_v">
             <div className="image">
               <img src="https://picsum.photos/300/300" alt="" />

@@ -1,3 +1,6 @@
+import styles from '../cssfiles/team.css'
+
+
 import React from "react";
 // rafc: create react component
 import { TeamBox } from "./Team_member_box";
@@ -9,8 +12,8 @@ export const Team = () => {
         <TeamBox />
         <TeamBox />
         <TeamBox />
-      </div>
-      <div className="wrapper_h">
+      {/* </div>
+      <div className="wrapper_h"> */}
         <TeamBox />
         <TeamBox />
         <TeamBox />

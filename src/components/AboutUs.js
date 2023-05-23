@@ -1,9 +1,11 @@
+import styles from '../cssfiles/aboutus.css'
+
 export const AboutUs = () => {
   return (
     <section className="about_us" id="about_us_section">
       <h2 className="title">About Us</h2>
       <div className="about_text">
-         <div className="wrapper_h">
+         <div className="wrapper_h aboutus-wrapper">
           <div className="wrapper_v">
             <h3>Mission</h3>
             <p>
@@ -19,7 +21,7 @@ export const AboutUs = () => {
           </div>
           <img src="https://picsum.photos/520/600" alt="" />
         </div>
-         <div className="wrapper_h">
+         <div className="wrapper_h aboutus-wrapper">
           <img src="https://picsum.photos/520/600" alt="" />
           <div className="wrapper_v">
             <h3>Foster Care & Adoption</h3>

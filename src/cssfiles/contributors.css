@@ -1,0 +1,202 @@
+.contributors {
+  padding-bottom: 20px;
+  min-height: 100vh;
+  height: auto;
+  background-image: linear-gradient(#ffffffc7, #ffffff6c),
+    url('../images/img2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-right: 100px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: var(--black);
+  border-bottom: 30px solid var(--primary);
+}
+
+.contributors .card {
+  margin-top: 40px;
+  height: 440px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #00000044;
+}
+
+.contributors .card .image {
+  margin: 20px;
+  height: auto;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #000000ad;
+  overflow: hidden;
+  /* border: 2px solid red; */
+}
+
+.contributors .card .image img {
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.contributors .card .image:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.contributors .card .name {
+  text-align: center;
+}
+
+.contributors .card .name span {
+  text-decoration: overline;
+  color: #8d8d8d;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.contributors .card .name h2 {
+  color: #00824e;
+  font-size: 28px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.testimony {
+  margin-right: 40px;
+  margin-bottom: 52px;
+  padding: 20px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b6b6b;
+  font-size: 16px;
+  background-color: #e7f3eb7d;
+  backdrop-filter: blur(200px);
+  /* border: 2px solid red; */
+}
+
+.testimony span {
+  height: 79%;
+  color: #dad8d8c7;
+  font-size: 100px;
+  font-family: "Times New Roman", Times, serif;
+  /* border: 2px solid red; */
+}
+
+.testimony span#endQuotes {
+  transform: rotate(180deg);
+}
+
+.card_left_shift {
+  position: relative;
+  left: -20px;
+}
+
+.card_right_shift {
+  position: relative;
+  right: -20px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .testimony {
+    margin-right: 27px;
+  }
+
+  .contributors {
+    border-right: 7vh solid var(--primary);
+  }
+
+  .contributors .card {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .testimony span {
+    height: 112%;
+  }
+
+  .testimony {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .testimony {
+    margin-bottom: 20px;
+  }
+
+  .contributors .card {
+    height: 400px;
+  }
+
+  .contributors .card .image img {
+    height: 40vh;
+    width: 40vh;
+  }
+
+  .wrapper_V {
+    padding: 4px;
+  }
+
+}
+
+@media only screen and (max-width: 775px) {
+  .testimony {
+    font-size: 12.5px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .contributors {
+    border-right: 0;
+  }
+
+  .contributors .card {
+    height: 350px;
+  }
+
+  .contributors .card .image img {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  .testimony span {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .contributors .card {
+    width: 97%;
+  }
+  .card_left_shift {
+    left: 0px;
+  }
+
+  .card_right_shift {
+    right: 0px;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+
+  .testimony {
+    margin: 10px;
+    font-size: 13.5px;
+  }
+
+  .contributor_wrapper_h {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contributors .card {
+    height: 100vh;
+  }
+}
