@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import Testimonial from "./pages/Testimonial";
 import TeamPage from "./pages/TeamPage";
+import SigninPage from "./pages/SigninPage";
 import DonatePage from "./pages/DonatePage";
 
 import { NavBar } from "./components/Navbar";
@@ -20,7 +21,8 @@ function App() {
           <Route exact path="NGO_Website/about" element={<AboutPage />} />
           <Route exact path="NGO_Website/testimonial" element={<Testimonial />} />
           <Route exact path="NGO_Website/team" element={<TeamPage />} />
-          <Route exact path="NGO_Website/donate" element={<DonatePage />} />
+          <Route exact path="NGO_Website/signin" element={<SigninPage />} reload="true" />
+          <Route exact path="NGO_Website/donate" element={<DonatePage />} reload="true" />
         </Routes>
 
         <Footer />

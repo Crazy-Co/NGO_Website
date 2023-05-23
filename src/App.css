@@ -654,6 +654,7 @@ section {
   margin-top: -10%;
   border-radius: 0 0 0 60px;
   overflow: hidden;
+  /* transform: scale(0.7); */
 }
 
 .payment_box {
@@ -765,46 +766,6 @@ section {
   margin: 20px 0px;
   color: #6f6f6f;
 }
-.footer .email_subscribe_form{
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  position: absolute;
-  bottom: 18%;  
-  /* border-radius: 10px; */
-  /* overflow: hidden; */
-}
-.footer .email_subscribe_form input{
-  border: 0;
-  outline: none;
-  padding: 19px 10px;
-  height: 30px;
-  width: 250px;
-  font-size: 16px;
-  /* background-color: rgb(171, 230, 247); */
-}
-.footer .email_subscribe_form button{
-  background-color: var(--primary);
-  border: none;
-  outline: none;
-  height: 40px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.footer span.msg{
-  color: var(--white);
-  position:absolute;
-  bottom: 0px;
-  font-size: 12px;
-}
-.footer .email_subscribe_form button img{
-  filter: invert(100%);
-}
 .footer .wrapper_h {
   display: flex;
   align-items: center;
@@ -854,5 +815,22 @@ section {
 }
 .footer .wrapper_h .wrapper_v ul li a:hover {
   color: #9f9f9f;
+}
+.footer_end{
+  /* border: 2px solid red; */
+}
+.footer_end ul{
+  margin: auto;
+  width: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 15px;
+  border-top: 1px solid #5f5f5f;
+}
+.footer_end ul li{
+  padding: 3px;
+  margin: 1px 25px;
 }
 /* footer css end */
