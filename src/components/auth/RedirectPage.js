@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import styles from "./login.css";
 
 export default function RedirectPage () {
     const navigate = useNavigate();
@@ -7,10 +8,12 @@ export default function RedirectPage () {
     useEffect(() => {
         setTimeout(() => {
             navigate('/NGO_Website/signedIn', { replace: true })
-        }, 3000)
+        }, 1000)
     }, [])
 
     return (
-        <h3>Redirecting to home page...</h3>
+        <p id="redirect_msg">
+        Redirecting to home page...
+        </p>
     )
 }

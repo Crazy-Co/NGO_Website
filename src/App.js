@@ -29,25 +29,24 @@ function App() {
         <Routes>
 
             {/* <Route path="signedin" element={<HomePageLoggedIn login='loggedIn' />}> */}
-              <Route path="signedin" element={<HomePageLoggedIn />} />
-              <Route exact path="signedin/about" element={<AboutPageLoggedIn />} />
-              <Route exact path="signedin/testimonial" element={<TestimonialLoggedIn />} />
-              <Route exact path="signedin/team" element={<TeamPageLoggedIn />} />
-              <Route exact path="signedin/donate" element={<DonatePageLoggedIn />} />
+              <Route path="NGO_Website/signedin" element={<HomePageLoggedIn />} />
+              <Route exact path="NGO_Website/signedin/about" element={<AboutPageLoggedIn />} />
+              <Route exact path="NGO_Website/signedin/testimonial" element={<TestimonialLoggedIn />} />
+              <Route exact path="NGO_Website/signedin/team" element={<TeamPageLoggedIn />} />
+              <Route exact path="NGO_Website/signedin/donate" element={<DonatePageLoggedIn />} />
             {/* </Route> */}
-            <Route path="" element={<HomePageLoggedOut />} />
-            <Route exact path="about" element={<AboutPage />} />
-            <Route exact path="testimonial" element={<Testimonial />} />
-            <Route exact path="team" element={<TeamPage />} />
-            <Route exact path="donate" element={<DonatePage />} />
-            <Route path="joinus" element={<LoginOrRegisterPage />}>
+            <Route path="NGO_Website/" element={<HomePageLoggedOut />} />
+            <Route exact path="NGO_Website/about" element={<AboutPage />} />
+            <Route exact path="NGO_Website/testimonial" element={<Testimonial />} />
+            <Route exact path="NGO_Website/team" element={<TeamPage />} />
+            <Route exact path="NGO_Website/donate" element={<DonatePage />} reloadDocument/>
+            <Route path="NGO_Website/joinus" element={<LoginOrRegisterPage />} reloadDocument>
               <Route path="signin" element={<Login />} />
               <Route path="signup" element={<Register />} />
             </Route>
-          </Route>
+          </Routes>
 
-        </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );

@@ -52,7 +52,7 @@ export const NavBarLoggedIn = () => {
           <Link to="../../../NGO_Website">Sign Out</Link>{" "}
         </li>
         <button className="donate_btn">
-          <Link to="../../NGO_Website/donate" reloadDocument>Donate Us</Link>
+          <Link to="../../NGO_Website/signedin/donate" reloadDocument>Donate Us</Link>
         </button>
       </ul>
     </div>

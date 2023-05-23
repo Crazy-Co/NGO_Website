@@ -5,8 +5,8 @@ import { AboutUs } from "../components/AboutUs";
 import { Contributors } from "../components/Contributors";
 import { Team } from "../components/Team";
 import { NavBar } from "../components/Navbar";
-import styles from '../cssfiles/map.css'
-
+import { Footer } from "../components/Footer";
+import styles from "../cssfiles/map.css";
 
 const HomePageLoggedOut = () => {
   return (
@@ -37,6 +37,7 @@ const HomePageLoggedOut = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
