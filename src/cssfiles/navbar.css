@@ -44,6 +44,7 @@
     transition: all 200ms ease-in;
     display: flex;
     align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
     /* margin: auto 3px; */
     /* background-color: rgba(165, 255, 203, 0.235); */
     /* border-radius: 20px/30px 10px; */
@@ -54,7 +55,7 @@
     height: 100%;
     width: 100%;
     color: var(--white);
-    font-size: 17px;
+    font-size: 16px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     text-decoration: none;
@@ -65,14 +66,35 @@
 }
 
 .navbar ul li:hover {
-    background-color: rgba(255, 255, 255, 0.902);
+    /* background-color: rgba(255, 255, 255, 0.902); */
     /* margin: auto 3px; */
     /* padding: 10px 15px; */
+    border-bottom: 4px solid white;
+    border-radius: 2px;
 }
 
 .navbar ul li:hover a {
-    color: rgb(0, 54, 81);
+    /* color: rgb(0, 54, 81); */
+    /* transform: translateY(-2px); */
 }
+
+/* .navbar ul li#signin_btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(33 102 49);
+    border-radius: 20px;
+    clip-path: polygon(5px 9px, 90px 5px, 85px 41px, 0px 45px);
+    height: 50px;
+}
+.navbar ul li#signin_btn a{
+    color: inherit;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar ul li#signin_btn:hover{
+    border: none;
+    border-radius: 0px;
+} 
+*/
 
 .donate_btn {
     background-color: rgb(231, 255, 240);
@@ -109,10 +131,10 @@
 
 .bar {
     display: block;
-    width: 40px;
-    height: 5px;
+    width: 35px;
+    height: 3px;
     margin-bottom: 1.5vh;
-    transition:  all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: white;
 }
 
@@ -124,6 +146,9 @@
         /* width: 40vh; */
         padding-left: 0;
         font-size: 14px;
+    }
+    .navbar ul li:hover{
+        border: none;
     }
 
     .donate_btn {
@@ -151,16 +176,26 @@
         transform: translateX(5px) rotate(-45deg) translateY(-25px);
     } */
 
+    .navbar{
+        /* border: 2px solid red; */
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
     .navbar ul{
         flex-direction: column;
         position: fixed;
-        left: -100%;
-        top: 9vh;
+        /* left: -100%; */
+        /* top: 9vh; */
+        top: -500%;
         gap: 0;
         /* background-color: aquamarine; */
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        z-index: -1;
     }
 
     .navMenu .logo {
@@ -171,7 +206,13 @@
         /* display: block; */
         background-color: var(--primary);
         width: 100%;
-        border: 2px solid white;
+        border: none;
+    }
+    .navMenu li:hover {
+        /* display: block; */
+        background-color: var(--primary);
+        width: 100%;
+        border: none;
     }
 
     .navMenu button {
@@ -182,6 +223,9 @@
 
     .navMenu.active{
         left: 0;
+        top: 9vh;
+
+
         /* height: 40vh; */
         /* width: 100%; */
     }

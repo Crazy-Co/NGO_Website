@@ -6,7 +6,7 @@ import { Footer } from "../components/Footer";
 
 const TeamPage = (props) => {
   return (
-    <div>
+    <div >
       <NavBar />
       <Team />
       <Footer />

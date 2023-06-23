@@ -67,7 +67,7 @@ export const PaymentForm = () => {
                         type="email"
                         name="email"
                         value={isEmail}
-                        pattern=""
+                        // pattern=""
                         onChange={(e) => setEmail(e.target.value)} required
                     />
                     <span>Email ID</span>
@@ -75,7 +75,7 @@ export const PaymentForm = () => {
                 <div className="inputBox">
                     <input
                         type="tel"
-                        pattern="[0-9]{9}"
+                        // pattern="[0-9]{9}"
                         name="contact"
                         value={isContact}
                         onChange={(e) => setContact(e.target.value)} required

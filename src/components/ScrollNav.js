@@ -17,7 +17,7 @@ export const ScrollNav = () => {
                     <a href="#team_section">Our Team</a>{" "}
                 </li>
                 <li>
-                    <a href="#footer_section">Join Us</a>{" "}
+                    <a href="#contact_section">Contact Us</a>{" "}
                 </li>
             </ul>
         </div>

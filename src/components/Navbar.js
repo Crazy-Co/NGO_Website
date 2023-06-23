@@ -27,7 +27,7 @@ export const NavBar = () => {
         <li>
           <Link to="../../NGO_Website/team">Our Team</Link>{" "}
         </li>
-        <li>
+        <li id="signin_btn">
           <Link to="../../../NGO_Website/joinus/signin">Sign in</Link>{" "}
         </li>
         <button className="donate_btn">

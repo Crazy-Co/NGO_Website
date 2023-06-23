@@ -1,0 +1,117 @@
+.contact {
+    padding-bottom: 20px;
+    min-height: 70vh;
+    height: auto;
+    /* background-image: linear-gradient(#ffffffc7, #ffffff6c), url('../images/img2.jpeg'); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    border-right: 100px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: center;
+    color: var(--black);
+    border-bottom: 30px solid var(--primary);
+    /* border: 2px solid red; */
+}
+
+.container{
+    /* border: 2px solid red; */
+    /* height: 50px; */
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(227, 227, 227);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(151, 151, 151);
+    /* position: absolute; */
+}
+
+.container .map_section{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 60%;
+    background-color: white;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    /* margin: 3px; */
+}
+.container .map_section h2, .container .form_section h2{
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    /* margin: 10px; */
+}
+.container .map_section img{
+    height: 600px;
+    box-shadow: 1px 1px 10px rgb(222, 222, 222);
+    transition: all 300ms ease-in;
+}
+.container .map_section img:hover{
+    height: 600px;
+    filter: blur(2px);
+    box-shadow: 1px 1px 10px rgb(222, 222, 222);
+    transform: scale(0.99);
+}
+.container .map_section p{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.container .form_section{
+    /* border: 2px solid red; */
+    /* height: 100%; */
+    width: 39%;
+    background-color: white;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+}
+.container .form_section form{
+    /* border: 2px solid red; */
+    height: 380px;
+}
+.container .form_section form input, .container .form_section form textarea{
+    padding: 6px;
+    margin: 5px;
+    width: 98%;
+}
+.container .form_section form div label{
+    margin: 5px;
+    font-size: 16px;
+}
+.container .form_section form div input{
+    font-size: 15px;
+    margin-left: 5px;
+    width: 25px;
+    position: relative;
+    top: 2px;
+    left: -2px;
+}
+.container .form_section form p{
+    margin: 5px;
+    font-size: 20px;
+}
+.container .form_section img{
+    /* height: 0px; */
+    width: 100%;
+    box-shadow: 1px 1px 10px rgb(175, 175, 175);
+}
+
+.container .form_section input[type=submit]{
+    width:100px;
+    background-color: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    position: relative;
+    top: 20px;
+}
+.container .form_section input[type=submit]:active{
+    background-color: var(--primary);
+    color: white;
+}

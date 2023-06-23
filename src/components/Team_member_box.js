@@ -5,7 +5,7 @@ import instagram_icon from "../images/instagram.png";
 
 export const TeamBox = () => {
     return(
-        <div className="team_box">
+        <div className="team_box carousel ">
             <div className="profile_pic"><img src="https://picsum.photos/200" alt="" /></div>
             <div className="name">Tom Riddle</div>
             <div className="role">Lord Voldemort</div>

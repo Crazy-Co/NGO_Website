@@ -21,7 +21,7 @@ export default function Register(props) {
         });
     } else {
       alert("Password does not match");
-    }
+    } 
   }
 
   return (

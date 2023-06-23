@@ -6,7 +6,6 @@ import HomePageLoggedOut from "./pages/HomePageLoggedOut";
 import AboutPage from "./pages/AboutPage";
 import Testimonial from "./pages/Testimonial";
 import TeamPage from "./pages/TeamPage";
-import SigninPage from "./pages/SigninPage";
 import DonatePage from "./pages/DonatePage";
 import LoginOrRegisterPage from "./pages/LoginOrRegisterPage";
 
